@@ -1,0 +1,51 @@
+ Innlogging og brukeropprettelse
+•	Brukere får tilgang via en unik lenke og oppretter selv brukernavn (e-post) og passord.
+•	Autentisering kan håndteres med f.eks. Firebase Authentication, Auth0 eller NextAuth (hvis du bruker Next.js).
+________________________________________
+🏠 Forside
+•	Viser informasjon om eventet/eventene.
+•	Felles for alle brukere.
+•	Bruk React for dynamisk visning, f.eks. pop-up med mer info om pakker og priser.
+________________________________________
+📁 Meny
+•	Logo (lenke til oslostudenthub.no)
+•	Mine oppgaver
+•	Dokumenter
+________________________________________
+✅ Mine oppgaver (bedriftsspesifikk side)
+Kun synlig for den innloggede bedriften. Her kan de:
+•	Laste opp logo (SVG/PNG)
+•	Fylle ut tekstfelter:
+•	Kort intro (250 ord)
+•	Grunnleggelsesdato, antall ansatte, hovedkontor
+•	Lang beskrivelse
+•	Alternativt: laste opp PDF/Word eller sende på e-post
+•	Oppgaver:
+•	Antall bord/stoler
+•	Hente billett
+•	Behov for ekstra standutstyr
+•	Matbestilling
+•	Fakturabetaling
+Administratorfunksjon:
+•	Du som eventplanlegger kan huke av oppgaver som er fullført.
+•	Grønn hake vises ved fullført oppgave.
+________________________________________
+📄 Dokumentsiden (bedriftsspesifikk)
+•	Viser kontrakt som PDF.
+•	Kontrakten er unik for hver bedrift (basert på valgt pakke).
+•	Signaturfunksjon (f.eks. med DocuSign, SignRequest eller integrert e-signatur).
+________________________________________
+📅 Event-siden (felles for alle)
+•	Viser kommende eventer.
+•	Påmeldingsskjema.
+•	Info om pakker og priser.
+•	Bruk React pop-up for "Les mer"-funksjon.
+________________________________________
+🛠️ Teknologi og verktøyforslag
+•	Frontend: React (med Tailwind eller Material UI)
+•	Backend: Node.js med Express eller Next.js API routes
+•	Database: Firebase, Supabase eller PostgreSQL
+•	Filopplasting: Cloudinary, Firebase Storage eller direkte til server
+•	Autentisering: Firebase Auth, Auth0 eller NextAuth
+•	Adminpanel: Egen side med oversikt over bedrifter og oppgaver
+

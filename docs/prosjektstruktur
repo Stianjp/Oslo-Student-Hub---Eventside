@@ -1,0 +1,41 @@
+event-admin/
+│
+├── client/                  # Frontend (React)
+│   ├── public/              # Statisk innhold (logoer, favicon, etc.)
+│   ├── src/
+│   │   ├── assets/          # Bilder, ikoner, SVG-er
+│   │   ├── components/      # Gjenbrukbare React-komponenter
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── TaskCard.jsx
+│   │   │   ├── EventPopup.jsx
+│   │   ├── pages/           # Sidekomponenter
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Tasks.jsx
+│   │   │   ├── Documents.jsx
+│   │   ├── services/        # API-kall og autentisering
+│   │   │   ├── authService.js
+│   │   │   ├── taskService.js
+│   │   ├── utils/           # Hjelpefunksjoner
+│   │   ├── App.jsx
+│   │   ├── index.js
+│   ├── .env                 # Miljøvariabler for frontend
+│   └── package.json
+│
+├── server/                  # Backend (Node.js/Express eller Next.js)
+│   ├── controllers/         # Logikk for API-endepunkter
+│   ├── models/              # Datamodeller (bruker, bedrift, oppgaver)
+│   ├── routes/              # API-ruter
+│   ├── middleware/          # Autentisering, validering
+│   ├── utils/               # Hjelpefunksjoner
+│   ├── config/              # DB-tilkobling, miljøoppsett
+│   ├── uploads/             # Midlertidig lagring av opplastede filer
+│   ├── .env                 # Miljøvariabler for backend
+│   └── server.js            # Oppstartspunkt
+│
+├── docs/                    # Dokumentasjon og prosjektplaner
+│   └── prosjektplan_eventside.pdf
+│
+├── README.md                # Prosjektbeskrivelse
+└── .gitignore               # Filer som skal ignoreres av Git
